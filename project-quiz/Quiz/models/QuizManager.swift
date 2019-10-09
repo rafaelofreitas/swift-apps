@@ -49,8 +49,8 @@ class QuizManager {
     ]
     
     private var quiz: Quiz!
-    private var _totalAnswer = 0
-    private var _totalCorrectAnswer = 0
+    private var _totalAnswers = 0
+    private var _totalCorrectAnswers = 0
     
     var question: String {
         return quiz.question
@@ -60,12 +60,12 @@ class QuizManager {
         return quiz.options
     }
     
-    var totalAnswer: Int {
-        return _totalAnswer
+    var totalAnswers: Int {
+        return _totalAnswers
     }
     
-    var totalCorrectAnswer: Int {
-        return _totalCorrectAnswer
+    var totalCorrectAnswers: Int {
+        return _totalCorrectAnswers
     }
     
     func refreshQuiz() {
@@ -75,10 +75,10 @@ class QuizManager {
     }
     
     func validadeAnswer(index: Int) {
-        _totalAnswer += 1
+        _totalAnswers += 1
         
         if quiz.validadeOptions(index) {
-            _totalCorrectAnswer += 1
+            _totalCorrectAnswers += 1
         }
     }
 }

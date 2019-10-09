@@ -128,7 +128,7 @@
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xax-98-paT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="xax-98-paT">
                                 <rect key="frame" x="16" y="90" width="383" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
@@ -147,7 +147,7 @@
                         <outletCollection property="btAnswers" destination="Esx-Bn-6jW" collectionClass="NSMutableArray" id="3kA-a7-Sub"/>
                         <outletCollection property="btAnswers" destination="nj4-1i-8uV" collectionClass="NSMutableArray" id="8Oa-XG-gHV"/>
                         <outletCollection property="btAnswers" destination="VvN-Wq-1IU" collectionClass="NSMutableArray" id="5iK-t2-NWi"/>
-                        <segue destination="HR0-S3-wzK" kind="show" id="Dgp-i3-Aoh"/>
+                        <segue destination="HR0-S3-wzK" kind="show" identifier="resultSegue" id="Dgp-i3-Aoh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9d-Ps-6iW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
