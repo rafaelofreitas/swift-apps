@@ -24,11 +24,11 @@ class QuizViewController: UIViewController {
         
         viTimer.frame.size.width = view.frame.size.width
         
-        UIView.animate(withDuration: 60.0, delay: 0.0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 30.0, delay: 0, options: .curveLinear, animations: {
             self.viTimer.frame.size.width = 0
-        }, completion: { (success) in
+        }) { (success) in
             self.showResults()
-        })
+        }
         
         getNewQuiz()
     }
@@ -53,7 +53,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func selectAnswer(_ sender: UIButton) {
-        let index = btAnswers.index(of: sender)!
+        let index = btAnswers.firstIndex(of: sender)!
         quizManager.validadeAnswer(index: index)
         
         getNewQuiz()

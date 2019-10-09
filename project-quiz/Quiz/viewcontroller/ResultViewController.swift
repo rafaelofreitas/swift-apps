@@ -29,6 +29,10 @@ class ResultViewController: UIViewController {
         
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     @IBAction func close(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
