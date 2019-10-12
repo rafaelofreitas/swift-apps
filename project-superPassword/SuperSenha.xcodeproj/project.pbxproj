@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		F21D4FA3234FF76E0013EA63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D4FA2234FF76E0013EA63 /* AppDelegate.swift */; };
 		F21D4FA5234FF76E0013EA63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D4FA4234FF76E0013EA63 /* SceneDelegate.swift */; };
-		F21D4FA7234FF76E0013EA63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D4FA6234FF76E0013EA63 /* ViewController.swift */; };
-		F21D4FAA234FF76E0013EA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21D4FA8234FF76E0013EA63 /* Main.storyboard */; };
 		F21D4FAC234FF76F0013EA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21D4FAB234FF76F0013EA63 /* Assets.xcassets */; };
 		F21D4FAF234FF76F0013EA63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21D4FAD234FF76F0013EA63 /* LaunchScreen.storyboard */; };
 		F21D4FBA234FF7700013EA63 /* SuperSenhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D4FB9234FF7700013EA63 /* SuperSenhaTests.swift */; };
 		F21D4FC5234FF7700013EA63 /* SuperSenhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D4FC4234FF7700013EA63 /* SuperSenhaUITests.swift */; };
+		F21D4FD8235011FB0013EA63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21D4FD6235011FB0013EA63 /* Main.storyboard */; };
+		F21D4FDB235012310013EA63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21D4FDA235012310013EA63 /* ViewController.swift */; };
+		F2C0F56523517C220023EAAD /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0F56423517C220023EAAD /* PasswordsViewController.swift */; };
+		F2C0F56723517E5B0023EAAD /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0F56623517E5B0023EAAD /* SecurityTipsViewController.swift */; };
+		F2C0F56923517F4D0023EAAD /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C0F56823517F4D0023EAAD /* PasswordGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		F21D4F9F234FF76E0013EA63 /* SuperSenha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSenha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21D4FA2234FF76E0013EA63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21D4FA4234FF76E0013EA63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F21D4FA6234FF76E0013EA63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F21D4FA9234FF76E0013EA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F21D4FAB234FF76F0013EA63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21D4FAE234FF76F0013EA63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21D4FB0234FF76F0013EA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		F21D4FC0234FF7700013EA63 /* SuperSenhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSenhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21D4FC4234FF7700013EA63 /* SuperSenhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSenhaUITests.swift; sourceTree = "<group>"; };
 		F21D4FC6234FF7700013EA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F21D4FD6235011FB0013EA63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F21D4FDA235012310013EA63 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2C0F56423517C220023EAAD /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
+		F2C0F56623517E5B0023EAAD /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
+		F2C0F56823517F4D0023EAAD /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,11 @@
 		F21D4FA1234FF76E0013EA63 /* SuperSenha */ = {
 			isa = PBXGroup;
 			children = (
+				F21D4FD9235012310013EA63 /* viewcontrollers */,
+				F21D4FD2235011FB0013EA63 /* models */,
+				F21D4FD4235011FB0013EA63 /* views */,
 				F21D4FA2234FF76E0013EA63 /* AppDelegate.swift */,
 				F21D4FA4234FF76E0013EA63 /* SceneDelegate.swift */,
-				F21D4FA6234FF76E0013EA63 /* ViewController.swift */,
-				F21D4FA8234FF76E0013EA63 /* Main.storyboard */,
 				F21D4FAB234FF76F0013EA63 /* Assets.xcassets */,
 				F21D4FAD234FF76F0013EA63 /* LaunchScreen.storyboard */,
 				F21D4FB0234FF76F0013EA63 /* Info.plist */,
@@ -127,6 +134,33 @@
 			);
 			path = SuperSenhaUITests;
 			sourceTree = "<group>";
+		};
+		F21D4FD2235011FB0013EA63 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F2C0F56823517F4D0023EAAD /* PasswordGenerator.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F21D4FD4235011FB0013EA63 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F21D4FD6235011FB0013EA63 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F21D4FD9235012310013EA63 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F21D4FDA235012310013EA63 /* ViewController.swift */,
+				F2C0F56423517C220023EAAD /* PasswordsViewController.swift */,
+				F2C0F56623517E5B0023EAAD /* SecurityTipsViewController.swift */,
+			);
+			name = viewcontrollers;
+			path = SuperSenha/viewcontrollers;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -232,9 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D4FD8235011FB0013EA63 /* Main.storyboard in Resources */,
 				F21D4FAF234FF76F0013EA63 /* LaunchScreen.storyboard in Resources */,
 				F21D4FAC234FF76F0013EA63 /* Assets.xcassets in Resources */,
-				F21D4FAA234FF76E0013EA63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21D4FA7234FF76E0013EA63 /* ViewController.swift in Sources */,
+				F21D4FDB235012310013EA63 /* ViewController.swift in Sources */,
+				F2C0F56523517C220023EAAD /* PasswordsViewController.swift in Sources */,
+				F2C0F56923517F4D0023EAAD /* PasswordGenerator.swift in Sources */,
 				F21D4FA3234FF76E0013EA63 /* AppDelegate.swift in Sources */,
 				F21D4FA5234FF76E0013EA63 /* SceneDelegate.swift in Sources */,
+				F2C0F56723517E5B0023EAAD /* SecurityTipsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +334,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F21D4FA8234FF76E0013EA63 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F21D4FA9234FF76E0013EA63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F21D4FAD234FF76F0013EA63 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

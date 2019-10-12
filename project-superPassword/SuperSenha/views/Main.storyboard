@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAD-nJ-Y3D">
-                                <rect key="frame" x="24" y="396.5" width="327" height="44"/>
+                                <rect key="frame" x="24" y="394.5" width="327" height="44"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="MYh-3D-R9m"/>
@@ -32,6 +32,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="generatepasswords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuP-Sm-1g9"/>
                                     <segue destination="32W-77-KDL" kind="show" id="Gp7-lE-8zv"/>
                                 </connections>
                             </button>
@@ -42,54 +43,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="máx: 16" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kXt-31-UNO">
-                                <rect key="frame" x="271" y="174" width="80" height="34"/>
+                                <rect key="frame" x="271" y="176" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="9sr-bk-zLt"/>
+                                    <constraint firstAttribute="height" constant="30" id="qSA-p2-Kr9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar letras minúsculas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpr-MQ-arE">
-                                <rect key="frame" x="24" y="226" width="270" height="22"/>
+                                <rect key="frame" x="24" y="224" width="270" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVZ-Xh-N9B">
-                                <rect key="frame" x="302" y="221.5" width="51" height="31"/>
+                                <rect key="frame" x="302" y="219.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar letras maiscúlas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqV-4b-PiP">
-                                <rect key="frame" x="24" y="266" width="270" height="22"/>
+                                <rect key="frame" x="24" y="264" width="270" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Tw-hE-3cX">
-                                <rect key="frame" x="302" y="261.5" width="51" height="31"/>
+                                <rect key="frame" x="302" y="259.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar números" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQp-yO-Md7">
-                                <rect key="frame" x="24" y="306" width="270" height="22"/>
+                                <rect key="frame" x="24" y="304" width="270" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iL1-eW-C6z">
-                                <rect key="frame" x="302" y="301.5" width="51" height="31"/>
+                                <rect key="frame" x="302" y="299.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="ae2-AC-iUi">
                                 <rect key="frame" x="101" y="493" width="173" height="210"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usar carcteres especiais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STT-Ax-VTy">
-                                <rect key="frame" x="24" y="346" width="270" height="22"/>
+                                <rect key="frame" x="24" y="344" width="270" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I68-c5-ftB">
-                                <rect key="frame" x="302" y="341.5" width="51" height="31"/>
+                                <rect key="frame" x="302" y="339.5" width="51" height="31"/>
                                 <color key="onTintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utK-9U-1cS">
@@ -144,6 +146,14 @@
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="nac-ss-x50">
                         <barButtonItem key="backBarButtonItem" title="Gerador de Senhas" id="0S0-v3-JQe"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="swCapitalLetters" destination="2Tw-hE-3cX" id="XY5-cG-xKk"/>
+                        <outlet property="swLettersTiny" destination="AVZ-Xh-N9B" id="0RN-qJ-K0e"/>
+                        <outlet property="swNumbers" destination="iL1-eW-C6z" id="K2y-So-bJa"/>
+                        <outlet property="swSpecialCharacters" destination="I68-c5-ftB" id="1La-8l-t85"/>
+                        <outlet property="tfTotalCharacters" destination="kXt-31-UNO" id="5F1-nL-aBd"/>
+                        <outlet property="tfTtotalPassword" destination="utK-9U-1cS" id="kuS-rM-FqJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +162,7 @@
         <!--Lista de Senhas-->
         <scene sceneID="0tT-QY-ni1">
             <objects>
-                <viewController id="32W-77-KDL" sceneMemberID="viewController">
+                <viewController id="32W-77-KDL" customClass="PasswordsViewController" customModule="SuperSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UfS-iQ-xbS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,6 +186,9 @@
                                 <state key="normal" title="Gerar Novas Senhas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="generate:" destination="32W-77-KDL" eventType="touchUpInside" id="GRr-nC-EhU"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mjf-y2-bVt">
                                 <rect key="frame" x="16" y="118" width="343" height="403"/>
@@ -191,6 +204,7 @@
                         <constraints>
                             <constraint firstItem="mjf-y2-bVt" firstAttribute="top" secondItem="Czp-wy-lOY" secondAttribute="top" constant="22" id="0qT-6j-2hq"/>
                             <constraint firstItem="mjf-y2-bVt" firstAttribute="leading" secondItem="Czp-wy-lOY" secondAttribute="leading" constant="16" id="HcK-Md-kId"/>
+                            <constraint firstItem="mjf-y2-bVt" firstAttribute="centerX" secondItem="UfS-iQ-xbS" secondAttribute="centerX" id="Jhs-PZ-qz5"/>
                             <constraint firstItem="HNS-yy-2RG" firstAttribute="leading" secondItem="Czp-wy-lOY" secondAttribute="leading" constant="16" id="Kpg-js-hut"/>
                             <constraint firstItem="Czp-wy-lOY" firstAttribute="bottom" secondItem="CmV-DE-iwu" secondAttribute="bottom" constant="24" id="YFM-bm-4KA"/>
                             <constraint firstItem="Czp-wy-lOY" firstAttribute="trailing" secondItem="CmV-DE-iwu" secondAttribute="trailing" constant="24" id="ex9-Z6-zbI"/>
@@ -202,15 +216,18 @@
                         <viewLayoutGuide key="safeArea" id="Czp-wy-lOY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Lista de Senhas" id="QNV-aC-gkL"/>
+                    <connections>
+                        <outlet property="tvPasswords" destination="mjf-y2-bVt" id="2nz-9L-bWT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVb-b1-Mjy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1781.5999999999999" y="125.4872563718141"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Tips View Controller-->
         <scene sceneID="4B3-rn-eOp">
             <objects>
-                <viewController id="Iip-3h-ram" sceneMemberID="viewController">
+                <viewController id="Iip-3h-ram" customClass="SecurityTipsViewController" customModule="SuperSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JDJ-8L-ZHe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,6 +237,9 @@
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="close:" destination="Iip-3h-ram" eventType="touchUpInside" id="c4q-Uj-qOK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 dicas para ter uma senha forte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JML-h0-0c2">
                                 <rect key="frame" x="47" y="12" width="281.5" height="21"/>
@@ -227,7 +247,7 @@
                                 <color key="textColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0NZ-kN-F89">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0NZ-kN-F89">
                                 <rect key="frame" x="18" y="58" width="339" height="513"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <attributedString key="attributedText">
@@ -410,14 +430,16 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                             <constraint firstItem="Bme-lF-E8W" firstAttribute="bottom" secondItem="eSi-cS-86V" secondAttribute="bottom" constant="24" id="6o7-OB-nfc"/>
                             <constraint firstItem="Bme-lF-E8W" firstAttribute="trailing" secondItem="eSi-cS-86V" secondAttribute="trailing" constant="24" id="JIi-AO-Sdo"/>
                             <constraint firstItem="JML-h0-0c2" firstAttribute="centerX" secondItem="JDJ-8L-ZHe" secondAttribute="centerX" id="Nst-lX-zdh"/>
+                            <constraint firstItem="eSi-cS-86V" firstAttribute="top" secondItem="0NZ-kN-F89" secondAttribute="bottom" constant="22" id="dkj-W0-y8A"/>
                             <constraint firstItem="JML-h0-0c2" firstAttribute="top" secondItem="Bme-lF-E8W" secondAttribute="top" constant="12" id="mAU-B4-Vjd"/>
+                            <constraint firstItem="0NZ-kN-F89" firstAttribute="top" secondItem="JML-h0-0c2" secondAttribute="bottom" constant="25" id="rJn-ol-38v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bme-lF-E8W"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E71-US-o6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629.5999999999999" y="124.58770614692655"/>
+            <point key="canvasLocation" x="2542" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nHz-3n-Pc6">
@@ -435,7 +457,7 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6t6-VQ-JOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="310" y="125"/>
         </scene>
     </scenes>
     <resources>
