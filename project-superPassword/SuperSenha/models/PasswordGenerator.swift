@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PasswordGenerato {
+class PasswordGenerator {
     var numberOfCharacters: Int
     var useLettersTiny: Bool!
     var useCapitalLetters: Bool!

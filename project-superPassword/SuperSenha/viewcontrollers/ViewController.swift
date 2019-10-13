@@ -18,10 +18,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let passwordViewController = segue.destination as! PasswordsViewController
+        
+        if let numberOfPassword: Int = Int(tfTtotalPassword.text!) {
+            passwordViewController.numberOfPasswords = numberOfPassword
+        }
+        
+        if let nuberOfCharacters: Int = Int(tfTotalCharacters.text!) {
+            passwordViewController.numberOfCharacters = nuberOfCharacters
+        }
+        
+        passwordViewController.useLettersTiny = swLettersTiny.isOn
+        passwordViewController.useCapitalLetters = swCapitalLetters.isOn
+        passwordViewController.useNumbers = swNumbers.isOn
+        passwordViewController.useSpecialCharacters = swSpecialCharacters.isOn
+        
+        view.endEditing(true)
+    }
+    
     @IBAction func generatepasswords(_ sender: UIButton) {
+       
     }
     
 }
