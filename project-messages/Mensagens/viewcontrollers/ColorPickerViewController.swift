@@ -2,11 +2,14 @@
 //  ColorPickViewController.swift
 //  Mensagens
 //
-//  Created by Rafael Freitas on 13/10/19.
-//  Copyright © 2019 Eric Brito. All rights reserved.
+//  Copyright © 2019 Rafael Freitas. All rights reserved.
 //
 
 import UIKit
+
+protocol ColorPickerDelegate: class {
+    func applyColor(color: UIColor)
+}
 
 class ColorPickerViewController: UIViewController {
     @IBOutlet weak var viColor: UIView!
@@ -14,11 +17,14 @@ class ColorPickerViewController: UIViewController {
     @IBOutlet weak var sdGreen: UISlider!
     @IBOutlet weak var sdBlue: UISlider!
     
+    weak var delegate: ColorPickerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func choseColor(_ sender: UIButton) {
+        delegate?.applyColor(color: viColor.backgroundColor!)
         dismiss(animated: true, completion: nil)
     }
     

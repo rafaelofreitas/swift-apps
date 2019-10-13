@@ -88,12 +88,12 @@
 		F20C19F22352ED1100B1C523 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-				F20C19F32352ED1100B1C523 /* MessageColorViewController.swift */,
-				F20C19F42352ED1100B1C523 /* ResultViewController.swift */,
-				F20C19F52352ED1100B1C523 /* ScreenColorViewController.swift */,
-				F20C19F62352ED1100B1C523 /* MessageViewController.swift */,
 				F20C19FF2352ED8A00B1C523 /* BaseViewController.swift */,
 				F20C1A012352F10F00B1C523 /* ColorPickerViewController.swift */,
+				F20C19F62352ED1100B1C523 /* MessageViewController.swift */,
+				F20C19F32352ED1100B1C523 /* MessageColorViewController.swift */,
+				F20C19F52352ED1100B1C523 /* ScreenColorViewController.swift */,
+				F20C19F42352ED1100B1C523 /* ResultViewController.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
