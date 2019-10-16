@@ -39,6 +39,10 @@ class ViewController: UITableViewController {
         [
             ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("04/01/2019")),
             ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat  sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("04/01/2019"))
+        ],
+        [
+            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("05/01/2019")),
+            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat  sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("05/01/2019"))
         ]
     ]
     
@@ -57,16 +61,57 @@ class ViewController: UITableViewController {
         return chatMessages.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    class DateHeaderLabel: UILabel {
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            
+            translatesAutoresizingMaskIntoConstraints = false
+            backgroundColor = .black
+            textColor = .white
+            textAlignment = .center
+            font = UIFont.boldSystemFont(ofSize: 13)
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        
+        override var intrinsicContentSize: CGSize {
+            let originalContentSize = super.intrinsicContentSize
+            let width = originalContentSize.width + 20
+            let height = originalContentSize.height + 10
+            layer.cornerRadius = height / 2
+            layer.masksToBounds = true
+            
+            return CGSize(width: width, height: height)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = DateHeaderLabel()
+        
         if let fistMessageInSection = chatMessages[section].first {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy"
             let dateString = dateFormatter.string(from: fistMessageInSection.date)
+
+            label.text = dateString
             
-            return dateString
+            let containerView = UIView()
+            containerView.addSubview(label)
+            
+            label.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
+            label.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true
+            
+            return containerView
         }
         
-        return "Sections: \(Date())"
+        return nil
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 53
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
