@@ -27,28 +27,37 @@ class ViewController: UITableViewController {
 
     fileprivate let cellId = "id123"
     
-    let chatMessages = [
-        [
+    let messagesFromServer = [
+            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat  sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: false, date: Date.customFromString("10/01/2019")),
             ChatMessage(text: "Lorem ipsum dolor sit amet.", isIcoming: true, date: Date.customFromString("01/01/2019")),
-            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin. Duis lobortis, diam commodo efficitur viverra, est urna venenatis augue, eget viverra est nisl id lectus. Suspendisse facilisis rhoncus elit sit amet commodo.", isIcoming: true, date: Date.customFromString("02/01/2019"))
-        ],
-        [
+            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin. Duis lobortis, diam commodo efficitur viverra, est urna venenatis augue, eget viverra est nisl id lectus. Suspendisse facilisis rhoncus elit sit amet commodo.", isIcoming: true, date: Date.customFromString("02/01/2019")),
             ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: false, date: Date.customFromString("03/01/2019")),
-            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: false, date: Date.customFromString("03/01/2019"))
-        ],
-        [
+            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: false, date: Date.customFromString("03/01/2019")),
             ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("04/01/2019")),
-            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat  sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("04/01/2019"))
-        ],
-        [
+            ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat  sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("04/01/2019")),
             ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("05/01/2019")),
             ChatMessage(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam feugiat  sapien et dignissim. Suspendisse congue enim quis mi ornare sollicitudin.", isIcoming: true, date: Date.customFromString("05/01/2019"))
-        ]
     ]
+    
+    fileprivate func attempToAssembleGroupedMessages () {
+        let groupedMessages = Dictionary(grouping: messagesFromServer) { (element) -> Date in
+            return element.date
+        }
+        
+        let sortedKeys = groupedMessages.keys.sorted()
+        sortedKeys.forEach { (Key) in
+            let values = groupedMessages[Key]
+            chatMessages.append(values ?? [])
+        }
+    }
+    
+    var chatMessages = [[ChatMessage]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        attempToAssembleGroupedMessages ()
+        
         navigationItem.title = "Messages"
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.register(ChatMessageCell.self, forCellReuseIdentifier: cellId)
