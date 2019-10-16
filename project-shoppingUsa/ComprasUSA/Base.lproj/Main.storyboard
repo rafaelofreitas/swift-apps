@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usa" translatesAutoresizingMaskIntoConstraints="NO" id="8Oq-gQ-zh1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="256"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="256.33333333333331"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-Nr-keq">
                                 <rect key="frame" x="40" y="152.66666666666666" width="70" height="39"/>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brasil" translatesAutoresizingMaskIntoConstraints="NO" id="jSE-fh-pXK">
-                                <rect key="frame" x="0.0" y="306" width="414" height="257"/>
+                                <rect key="frame" x="0.0" y="306.33333333333337" width="414" height="256.33333333333337"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oM-g1-i3x">
                                 <rect key="frame" x="40" y="415" width="352" height="39"/>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0j-Vs-Bts">
-                                <rect key="frame" x="132" y="148" width="242" height="48"/>
+                                <rect key="frame" x="132" y="148.33333333333334" width="242" height="48"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -80,7 +80,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Compras" selectedImage="bag" id="hXX-8Q-LMe"/>
+                    <tabBarItem key="tabBarItem" title="Compras" image="bag" id="hXX-8Q-LMe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +98,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="371"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="uPU-DE-rIT">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="uPU-DE-rIT">
                                 <rect key="frame" x="20" y="74" width="374" height="267"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="pLq-AE-ymc">
@@ -156,6 +156,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -170,7 +171,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U67-S1-Mbq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Configurações" selectedImage="settings" id="EFc-f2-2oR"/>
+                    <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="EFc-f2-2oR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvc-kb-Nh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,10 +190,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-G3-vnK">
-                                <rect key="frame" x="0.0" y="346" width="414" height="205"/>
+                                <rect key="frame" x="0.0" y="345.66666666666669" width="414" height="205.00000000000006"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US$ 0,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVF-41-eDB">
-                                        <rect key="frame" x="737" y="20" width="71" height="21"/>
+                                        <rect key="frame" x="323" y="20" width="71" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -216,13 +217,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US$ 0,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-OC-Fyz">
-                                        <rect key="frame" x="737" y="51" width="71" height="21"/>
+                                        <rect key="frame" x="323" y="51" width="71" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US$ 0,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M13-F8-yUF">
-                                        <rect key="frame" x="737" y="82" width="71" height="21"/>
+                                        <rect key="frame" x="323" y="82" width="71" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -243,7 +244,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPe-lZ-Haf">
-                                        <rect key="frame" x="741" y="166" width="67" height="21"/>
+                                        <rect key="frame" x="327" y="166" width="67" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -283,7 +284,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MOe-3m-lmZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Impostos" selectedImage="taxes" id="6he-a6-bG9"/>
+                    <tabBarItem key="tabBarItem" title="Impostos" image="taxes" id="6he-a6-bG9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyD-rY-PWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
