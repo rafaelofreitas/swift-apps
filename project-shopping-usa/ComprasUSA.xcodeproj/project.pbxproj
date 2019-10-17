@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		F21384352354001D00A5F36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21384342354001D00A5F36C /* AppDelegate.swift */; };
 		F21384372354001D00A5F36C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21384362354001D00A5F36C /* SceneDelegate.swift */; };
-		F21384392354001D00A5F36C /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21384382354001D00A5F36C /* ShoppingViewController.swift */; };
-		F213843C2354001D00A5F36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F213843A2354001D00A5F36C /* Main.storyboard */; };
 		F213843E2354001F00A5F36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F213843D2354001F00A5F36C /* Assets.xcassets */; };
 		F21384412354001F00A5F36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F213843F2354001F00A5F36C /* LaunchScreen.storyboard */; };
 		F213844C2354001F00A5F36C /* ComprasUSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F213844B2354001F00A5F36C /* ComprasUSATests.swift */; };
 		F21384572354001F00A5F36C /* ComprasUSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21384562354001F00A5F36C /* ComprasUSAUITests.swift */; };
-		F21384652354045B00A5F36C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21384642354045B00A5F36C /* SettingsViewController.swift */; };
-		F21384672354048C00A5F36C /* TaxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21384662354048C00A5F36C /* TaxesViewController.swift */; };
+		F2FF243823580F54001D5A51 /* TaxesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF243023580F53001D5A51 /* TaxesCalculator.swift */; };
+		F2FF243923580F54001D5A51 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF243223580F53001D5A51 /* ShoppingViewController.swift */; };
+		F2FF243A23580F54001D5A51 /* TaxesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF243323580F53001D5A51 /* TaxesViewController.swift */; };
+		F2FF243B23580F54001D5A51 /* UIViewControllerTaxesCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF243423580F53001D5A51 /* UIViewControllerTaxesCalculator.swift */; };
+		F2FF243C23580F54001D5A51 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF243523580F53001D5A51 /* SettingsViewController.swift */; };
+		F2FF243D23580F54001D5A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FF243723580F53001D5A51 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,6 @@
 		F21384312354001D00A5F36C /* ComprasUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComprasUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21384342354001D00A5F36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F21384362354001D00A5F36C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F21384382354001D00A5F36C /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
-		F213843B2354001D00A5F36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F213843D2354001F00A5F36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F21384402354001F00A5F36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F21384422354001F00A5F36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,8 +51,12 @@
 		F21384522354001F00A5F36C /* ComprasUSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComprasUSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21384562354001F00A5F36C /* ComprasUSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComprasUSAUITests.swift; sourceTree = "<group>"; };
 		F21384582354001F00A5F36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F21384642354045B00A5F36C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		F21384662354048C00A5F36C /* TaxesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxesViewController.swift; sourceTree = "<group>"; };
+		F2FF243023580F53001D5A51 /* TaxesCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxesCalculator.swift; sourceTree = "<group>"; };
+		F2FF243223580F53001D5A51 /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		F2FF243323580F53001D5A51 /* TaxesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxesViewController.swift; sourceTree = "<group>"; };
+		F2FF243423580F53001D5A51 /* UIViewControllerTaxesCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerTaxesCalculator.swift; sourceTree = "<group>"; };
+		F2FF243523580F53001D5A51 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F2FF243723580F53001D5A51 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +107,14 @@
 		F21384332354001D00A5F36C /* ComprasUSA */ = {
 			isa = PBXGroup;
 			children = (
+				F2FF242F23580F53001D5A51 /* models */,
+				F2FF243123580F53001D5A51 /* viewControllers */,
+				F2FF243623580F53001D5A51 /* views */,
 				F21384342354001D00A5F36C /* AppDelegate.swift */,
 				F21384362354001D00A5F36C /* SceneDelegate.swift */,
-				F21384382354001D00A5F36C /* ShoppingViewController.swift */,
-				F213843A2354001D00A5F36C /* Main.storyboard */,
 				F213843D2354001F00A5F36C /* Assets.xcassets */,
 				F213843F2354001F00A5F36C /* LaunchScreen.storyboard */,
 				F21384422354001F00A5F36C /* Info.plist */,
-				F21384642354045B00A5F36C /* SettingsViewController.swift */,
-				F21384662354048C00A5F36C /* TaxesViewController.swift */,
 			);
 			path = ComprasUSA;
 			sourceTree = "<group>";
@@ -132,6 +135,33 @@
 				F21384582354001F00A5F36C /* Info.plist */,
 			);
 			path = ComprasUSAUITests;
+			sourceTree = "<group>";
+		};
+		F2FF242F23580F53001D5A51 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF243023580F53001D5A51 /* TaxesCalculator.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F2FF243123580F53001D5A51 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF243223580F53001D5A51 /* ShoppingViewController.swift */,
+				F2FF243323580F53001D5A51 /* TaxesViewController.swift */,
+				F2FF243423580F53001D5A51 /* UIViewControllerTaxesCalculator.swift */,
+				F2FF243523580F53001D5A51 /* SettingsViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		F2FF243623580F53001D5A51 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF243723580F53001D5A51 /* Main.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +268,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FF243D23580F54001D5A51 /* Main.storyboard in Resources */,
 				F21384412354001F00A5F36C /* LaunchScreen.storyboard in Resources */,
 				F213843E2354001F00A5F36C /* Assets.xcassets in Resources */,
-				F213843C2354001D00A5F36C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,11 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F21384392354001D00A5F36C /* ShoppingViewController.swift in Sources */,
+				F2FF243823580F54001D5A51 /* TaxesCalculator.swift in Sources */,
 				F21384352354001D00A5F36C /* AppDelegate.swift in Sources */,
-				F21384672354048C00A5F36C /* TaxesViewController.swift in Sources */,
+				F2FF243C23580F54001D5A51 /* SettingsViewController.swift in Sources */,
+				F2FF243A23580F54001D5A51 /* TaxesViewController.swift in Sources */,
+				F2FF243923580F54001D5A51 /* ShoppingViewController.swift in Sources */,
+				F2FF243B23580F54001D5A51 /* UIViewControllerTaxesCalculator.swift in Sources */,
 				F21384372354001D00A5F36C /* SceneDelegate.swift in Sources */,
-				F21384652354045B00A5F36C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F213843A2354001D00A5F36C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F213843B2354001D00A5F36C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F213843F2354001F00A5F36C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

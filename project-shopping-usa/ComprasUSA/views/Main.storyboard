@@ -81,6 +81,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compras" image="bag" id="hXX-8Q-LMe"/>
+                    <connections>
+                        <outlet property="lbReal" destination="5oM-g1-i3x" id="2la-n0-AZk"/>
+                        <outlet property="lbRealDescription" destination="3fO-Va-F2D" id="a6O-At-VD8"/>
+                        <outlet property="tfDolar" destination="X0j-Vs-Bts" id="SYq-Oe-txW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,7 +120,10 @@
                                                 <color key="backgroundColor" red="1" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.67450980392156867" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="doA-Q2-XQh" id="DDq-Ic-NhW"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -133,7 +141,10 @@
                                                 <color key="backgroundColor" red="0.77647058823529413" green="0.94901960784313721" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.0" green="0.50980392156862742" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="doA-Q2-XQh" id="RbW-xu-n4f"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -151,7 +162,10 @@
                                                 <color key="backgroundColor" red="0.88235294117647056" green="0.96862745098039216" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.0" green="0.023529411764705882" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="doA-Q2-XQh" id="dRw-rc-MAM"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -172,6 +186,11 @@
                         <viewLayoutGuide key="safeArea" id="U67-S1-Mbq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="EFc-f2-2oR"/>
+                    <connections>
+                        <outlet property="tfDolar" destination="OAh-mp-T0i" id="vfo-Sd-EaT"/>
+                        <outlet property="tfIOF" destination="ygM-TG-gfB" id="8bi-Zu-URS"/>
+                        <outlet property="tfSateTaxes" destination="wBy-yM-DIz" id="Pby-er-TSI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvc-kb-Nh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,6 +304,15 @@
                         <viewLayoutGuide key="safeArea" id="MOe-3m-lmZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Impostos" image="taxes" id="6he-a6-bG9"/>
+                    <connections>
+                        <outlet property="lbDolar" destination="dVF-41-eDB" id="KTy-O1-Z5g"/>
+                        <outlet property="lbIOF" destination="M13-F8-yUF" id="3oc-M3-Xoi"/>
+                        <outlet property="lbIOFDescription" destination="YFz-zn-B5H" id="uBU-yR-5rM"/>
+                        <outlet property="lbReal" destination="EPe-lZ-Haf" id="bHB-8K-Ka2"/>
+                        <outlet property="lbSateTaxes" destination="8Zg-OC-Fyz" id="9rT-UA-eKQ"/>
+                        <outlet property="lbStateTaxesDescription" destination="pPU-9y-Erl" id="XAk-gY-U6v"/>
+                        <outlet property="swCreditCard" destination="qXc-QJ-SAj" id="a3A-bR-a39"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KyD-rY-PWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
