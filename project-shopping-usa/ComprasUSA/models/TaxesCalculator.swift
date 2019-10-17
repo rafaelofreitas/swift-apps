@@ -30,13 +30,13 @@ class TaxesCalculator {
     }
     
     func calculate(usingCreditCard: Bool) -> Double {
-        var finalValue = shoppingValue + stateTax
+        var finalValue = shoppingValue + stateTaxValue
         
         if usingCreditCard {
             finalValue += iofValue
         }
         
-        return finalValue
+        return finalValue * dolar
     }
     
     func convertToDouble(_ string: String) -> Double {

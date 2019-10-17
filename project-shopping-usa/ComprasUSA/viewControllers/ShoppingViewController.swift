@@ -32,7 +32,7 @@ class ShoppingViewController: UIViewController {
         let value = taxesCalculator.dolar * taxesCalculator.shoppingValue
         lbReal.text = taxesCalculator.getFormattedValue(of: value, withCurrency: "R$ ")
         
-        let dolar = taxesCalculator.getFormattedValue(of: taxesCalculator.dolar, withCurrency: "$ ")
+        let dolar = taxesCalculator.getFormattedValue(of: taxesCalculator.dolar, withCurrency: "US$ ")
         lbRealDescription.text = "Valor sem impostos (dólar: \(dolar))"
     }
 }
