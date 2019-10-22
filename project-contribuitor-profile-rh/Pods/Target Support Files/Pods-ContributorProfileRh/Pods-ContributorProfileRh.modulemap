@@ -1,0 +1,6 @@
+framework module Pods_ContributorProfileRh {
+  umbrella header "Pods-ContributorProfileRh-umbrella.h"
+
+  export *
+  module * { export * }
+}

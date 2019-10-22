@@ -1,5 +1,5 @@
 //
-//  CustomCell.swift
+//  CustomBodyCell.swift
 //  ContributorProfileRh
 //
 //  Created by Rafael Freitas on 21/10/19.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CustomCell: UITableViewCell {
+class CustomBodyCell: UITableViewCell {
     var mainImage: UIImage?
     var title: String?
     var subtitle: String?
@@ -61,8 +61,7 @@ class CustomCell: UITableViewCell {
         self.addSubview(lineView)
         
         dataSubviews()
-        
-        
+
         let constraints = [
             mainImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
             mainImageView.widthAnchor.constraint(equalToConstant: 40),
@@ -81,7 +80,7 @@ class CustomCell: UITableViewCell {
             lineView.leftAnchor.constraint(equalTo: self.mainImageView.rightAnchor, constant: 18),
             lineView.rightAnchor.constraint(equalTo: self.rightAnchor),
             lineView.heightAnchor.constraint(equalToConstant: 1),
-            lineView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            lineView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5)
         ]
         
         NSLayoutConstraint.activate(constraints)
@@ -106,5 +105,4 @@ class CustomCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
