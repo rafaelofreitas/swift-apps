@@ -19,13 +19,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0E1E5C613A819795C6D53425398E3321 /* Pods-highchartExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 281103B370CA1E294B6441DF6A371E34 /* Pods-highchartExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97351672268829618C4B32DCCB74ADF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		ADEC924170927FCB96CF0C379336117D /* Pods-highchartExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFB5C9BCF884FE84DB4EF4D6C773DD1 /* Pods-highchartExample-dummy.m */; };
+		4B789DD8A055F162E1C673B686505CE7 /* Pods-HomeScreen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D220A2035DBC9432BB5975135A1C87 /* Pods-HomeScreen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A212F6ADD565A160340CD3255858E211 /* Pods-HomeScreen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52D91F9237BDECD90F0A92EFB6CE37 /* Pods-HomeScreen-dummy.m */; };
+		EDEDAF4F7371218B9507EBDE779C9FB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B8FF94C235305BAC28534D501C107F81 /* PBXContainerItemProxy */ = {
+		484BE2AEA58F51794FE32F2B4C1DFFCB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,27 +36,27 @@
 
 /* Begin PBXFileReference section */
 		0A2239FD5D37FACCC037B66A40A27F36 /* Highcharts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Highcharts.xcconfig; sourceTree = "<group>"; };
-		281103B370CA1E294B6441DF6A371E34 /* Pods-highchartExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-highchartExample-umbrella.h"; sourceTree = "<group>"; };
+		0A52D91F9237BDECD90F0A92EFB6CE37 /* Pods-HomeScreen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeScreen-dummy.m"; sourceTree = "<group>"; };
+		2D088C9B9FE1D825A5B9C3A64DC44FDE /* Pods-HomeScreen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeScreen.modulemap"; sourceTree = "<group>"; };
+		2D2AFCE0AD5173FED0DFB56A2073E226 /* Pods-HomeScreen-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeScreen-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5EEB4947BF4D083CA50AC8B72B1CC264 /* Highcharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Highcharts.framework; path = development/Highcharts.framework; sourceTree = "<group>"; };
-		60C4E08E2FBCC51B40900AD6D2D7B3F3 /* Pods-highchartExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-highchartExample.release.xcconfig"; sourceTree = "<group>"; };
-		85B7E46FB80087A4C54A77A427595847 /* Pods-highchartExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-highchartExample-Info.plist"; sourceTree = "<group>"; };
+		67E606A0D46E98369B9AB2A65CC63F5F /* Pods-HomeScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1EE4DC934BC089B1B3D377B36B09BD /* Pods_HomeScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeScreen.framework; path = "Pods-HomeScreen.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E150251BF03DDD4DD671CEC5627F20E /* Pods-HomeScreen-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeScreen-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F310CC2F94230AFC1E24D9A42226011 /* Pods_highchartExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_highchartExample.framework; path = "Pods-highchartExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B096F7AC95407546FCA7309C2EB6A370 /* Pods-highchartExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-highchartExample.modulemap"; sourceTree = "<group>"; };
-		B8D05FA018B93DC3B977A9F2305512D8 /* Pods-highchartExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-highchartExample-frameworks.sh"; sourceTree = "<group>"; };
-		CA836BEBCA1E58889D6DB433EDACE169 /* Pods-highchartExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-highchartExample.debug.xcconfig"; sourceTree = "<group>"; };
-		D23A817C0DEC293CA06FC0A24E27C7D1 /* Pods-highchartExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-highchartExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EDFB5C9BCF884FE84DB4EF4D6C773DD1 /* Pods-highchartExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-highchartExample-dummy.m"; sourceTree = "<group>"; };
-		F695EAD5C5849A3473B0431F35DAFA3F /* Pods-highchartExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-highchartExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		AF773243065C21A567399019475B26C3 /* Pods-HomeScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeScreen.release.xcconfig"; sourceTree = "<group>"; };
+		C06BB523F82227748ADA308011BFB9B6 /* Pods-HomeScreen-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeScreen-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0405DF80EABEDD2923CD623CE628CB1 /* Pods-HomeScreen-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeScreen-frameworks.sh"; sourceTree = "<group>"; };
+		D4D220A2035DBC9432BB5975135A1C87 /* Pods-HomeScreen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeScreen-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C5A057A5C72CA4AE7F75ADF60B0A7EE /* Frameworks */ = {
+		C247AD2D14BF80F6FF7AEB511C8AF379 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97351672268829618C4B32DCCB74ADF9 /* Foundation.framework in Frameworks */,
+				EDEDAF4F7371218B9507EBDE779C9FB8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,20 +71,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		038E1CEA4EB47330E8C6F7D48276993B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CD2450C598B3A12034C862FD0ABB08A9 /* Pods-highchartExample */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		0F08B13E7D5F2411ED894EF7753D59DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5EEB4947BF4D083CA50AC8B72B1CC264 /* Highcharts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		257557C87AF5717873B41FBB83573197 /* Pods-HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2D088C9B9FE1D825A5B9C3A64DC44FDE /* Pods-HomeScreen.modulemap */,
+				C06BB523F82227748ADA308011BFB9B6 /* Pods-HomeScreen-acknowledgements.markdown */,
+				8E150251BF03DDD4DD671CEC5627F20E /* Pods-HomeScreen-acknowledgements.plist */,
+				0A52D91F9237BDECD90F0A92EFB6CE37 /* Pods-HomeScreen-dummy.m */,
+				D0405DF80EABEDD2923CD623CE628CB1 /* Pods-HomeScreen-frameworks.sh */,
+				2D2AFCE0AD5173FED0DFB56A2073E226 /* Pods-HomeScreen-Info.plist */,
+				D4D220A2035DBC9432BB5975135A1C87 /* Pods-HomeScreen-umbrella.h */,
+				67E606A0D46E98369B9AB2A65CC63F5F /* Pods-HomeScreen.debug.xcconfig */,
+				AF773243065C21A567399019475B26C3 /* Pods-HomeScreen.release.xcconfig */,
+			);
+			name = "Pods-HomeScreen";
+			path = "Target Support Files/Pods-HomeScreen";
 			sourceTree = "<group>";
 		};
 		2A5D482809CBC21934CF941068B952A3 /* Support Files */ = {
@@ -96,12 +105,12 @@
 			path = "../Target Support Files/Highcharts";
 			sourceTree = "<group>";
 		};
-		7ECE52D96A337D8DF48201BA29D86187 /* Products */ = {
+		467877A5492BE1EF16B344A77B20961D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F310CC2F94230AFC1E24D9A42226011 /* Pods_highchartExample.framework */,
+				257557C87AF5717873B41FBB83573197 /* Pods-HomeScreen */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -112,31 +121,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CD2450C598B3A12034C862FD0ABB08A9 /* Pods-highchartExample */ = {
-			isa = PBXGroup;
-			children = (
-				B096F7AC95407546FCA7309C2EB6A370 /* Pods-highchartExample.modulemap */,
-				D23A817C0DEC293CA06FC0A24E27C7D1 /* Pods-highchartExample-acknowledgements.markdown */,
-				F695EAD5C5849A3473B0431F35DAFA3F /* Pods-highchartExample-acknowledgements.plist */,
-				EDFB5C9BCF884FE84DB4EF4D6C773DD1 /* Pods-highchartExample-dummy.m */,
-				B8D05FA018B93DC3B977A9F2305512D8 /* Pods-highchartExample-frameworks.sh */,
-				85B7E46FB80087A4C54A77A427595847 /* Pods-highchartExample-Info.plist */,
-				281103B370CA1E294B6441DF6A371E34 /* Pods-highchartExample-umbrella.h */,
-				CA836BEBCA1E58889D6DB433EDACE169 /* Pods-highchartExample.debug.xcconfig */,
-				60C4E08E2FBCC51B40900AD6D2D7B3F3 /* Pods-highchartExample.release.xcconfig */,
-			);
-			name = "Pods-highchartExample";
-			path = "Target Support Files/Pods-highchartExample";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				00A435F070B548E527D885840AA0BC53 /* Pods */,
-				7ECE52D96A337D8DF48201BA29D86187 /* Products */,
-				038E1CEA4EB47330E8C6F7D48276993B /* Targets Support Files */,
+				EBB65BD02E3D9860864C747912C8A371 /* Products */,
+				467877A5492BE1EF16B344A77B20961D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,37 +150,45 @@
 			path = Highcharts;
 			sourceTree = "<group>";
 		};
+		EBB65BD02E3D9860864C747912C8A371 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1EE4DC934BC089B1B3D377B36B09BD /* Pods_HomeScreen.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C1A494F421B5ABF8EE709E038B464E2F /* Headers */ = {
+		0BA569BBE0F433CCC336A7431AA89567 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1E5C613A819795C6D53425398E3321 /* Pods-highchartExample-umbrella.h in Headers */,
+				4B789DD8A055F162E1C673B686505CE7 /* Pods-HomeScreen-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F904111469EA0FC9E218640EF5926240 /* Pods-highchartExample */ = {
+		6B7A6143485925683581373F60DD07AA /* Pods-HomeScreen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF696920F8D72195609056CCF4E0E061 /* Build configuration list for PBXNativeTarget "Pods-highchartExample" */;
+			buildConfigurationList = 520D06E6ACBED41FEF89426A568317DE /* Build configuration list for PBXNativeTarget "Pods-HomeScreen" */;
 			buildPhases = (
-				C1A494F421B5ABF8EE709E038B464E2F /* Headers */,
-				F8428B8FAE0B85883307AA3CF06B67FD /* Sources */,
-				2C5A057A5C72CA4AE7F75ADF60B0A7EE /* Frameworks */,
-				9961CD87E8F595B13613A44477047A7A /* Resources */,
+				0BA569BBE0F433CCC336A7431AA89567 /* Headers */,
+				AFFD57C1E542E82AADB4A7A488698DA3 /* Sources */,
+				C247AD2D14BF80F6FF7AEB511C8AF379 /* Frameworks */,
+				FB22AB54B893F5969A90AECD1CABAB06 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0F56092D4C8DFA0245C49B7E6567F1DB /* PBXTargetDependency */,
+				12DB69CCE95DCC971C20EDCA3DF667BE /* PBXTargetDependency */,
 			);
-			name = "Pods-highchartExample";
-			productName = "Pods-highchartExample";
-			productReference = 9F310CC2F94230AFC1E24D9A42226011 /* Pods_highchartExample.framework */;
+			name = "Pods-HomeScreen";
+			productName = "Pods-HomeScreen";
+			productReference = 8D1EE4DC934BC089B1B3D377B36B09BD /* Pods_HomeScreen.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -209,18 +209,18 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7ECE52D96A337D8DF48201BA29D86187 /* Products */;
+			productRefGroup = EBB65BD02E3D9860864C747912C8A371 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				DE253FFF71532979EAEFDFB5BE8947F7 /* Highcharts */,
-				F904111469EA0FC9E218640EF5926240 /* Pods-highchartExample */,
+				6B7A6143485925683581373F60DD07AA /* Pods-HomeScreen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9961CD87E8F595B13613A44477047A7A /* Resources */ = {
+		FB22AB54B893F5969A90AECD1CABAB06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,29 +230,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F8428B8FAE0B85883307AA3CF06B67FD /* Sources */ = {
+		AFFD57C1E542E82AADB4A7A488698DA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEC924170927FCB96CF0C379336117D /* Pods-highchartExample-dummy.m in Sources */,
+				A212F6ADD565A160340CD3255858E211 /* Pods-HomeScreen-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0F56092D4C8DFA0245C49B7E6567F1DB /* PBXTargetDependency */ = {
+		12DB69CCE95DCC971C20EDCA3DF667BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Highcharts;
 			target = DE253FFF71532979EAEFDFB5BE8947F7 /* Highcharts */;
-			targetProxy = B8FF94C235305BAC28534D501C107F81 /* PBXContainerItemProxy */;
+			targetProxy = 484BE2AEA58F51794FE32F2B4C1DFFCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		150586F51A4F252198C31359A8F652B0 /* Debug */ = {
+		171A4177C55769766BAE583DD5B3A060 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA836BEBCA1E58889D6DB433EDACE169 /* Pods-highchartExample.debug.xcconfig */;
+			baseConfigurationReference = AF773243065C21A567399019475B26C3 /* Pods-HomeScreen.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -265,7 +265,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-highchartExample/Pods-highchartExample-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeScreen/Pods-HomeScreen-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -274,7 +274,46 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-highchartExample/Pods-highchartExample.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeScreen/Pods-HomeScreen.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3D9AC7F6FC2EEA1F805C8CFE9A685010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67E606A0D46E98369B9AB2A65CC63F5F /* Pods-HomeScreen.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeScreen/Pods-HomeScreen-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeScreen/Pods-HomeScreen.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -428,45 +467,6 @@
 			};
 			name = Debug;
 		};
-		D70DA87D5C02484D468339FAD5B8F2FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60C4E08E2FBCC51B40900AD6D2D7B3F3 /* Pods-highchartExample.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-highchartExample/Pods-highchartExample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-highchartExample/Pods-highchartExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		FB0590C26FE8B31DA2CC4CA24FD3D991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A2239FD5D37FACCC037B66A40A27F36 /* Highcharts.xcconfig */;
@@ -496,20 +496,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		520D06E6ACBED41FEF89426A568317DE /* Build configuration list for PBXNativeTarget "Pods-HomeScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9AC7F6FC2EEA1F805C8CFE9A685010 /* Debug */,
+				171A4177C55769766BAE583DD5B3A060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF4F70716E2ABAD8F40EBC235F0E8912 /* Build configuration list for PBXAggregateTarget "Highcharts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EA081DDD1CF8A9F65F0CFDF0BFEA10D /* Debug */,
 				FB0590C26FE8B31DA2CC4CA24FD3D991 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF696920F8D72195609056CCF4E0E061 /* Build configuration list for PBXNativeTarget "Pods-highchartExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				150586F51A4F252198C31359A8F652B0 /* Debug */,
-				D70DA87D5C02484D468339FAD5B8F2FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
