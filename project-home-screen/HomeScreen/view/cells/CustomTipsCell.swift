@@ -12,10 +12,6 @@ class CustomTipsCell: UITableViewCell {
     var tip: Tips?
     var items: [TipsItem] = []
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
-    
     var cardView: CardView = {
         var card = CardView()
         card.translatesAutoresizingMaskIntoConstraints = false
@@ -29,6 +25,10 @@ class CustomTipsCell: UITableViewCell {
         
         return verticalScroll
     }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    }
     
     func setupView() {
         if let tip = tip {

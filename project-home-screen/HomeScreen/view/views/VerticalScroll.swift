@@ -11,11 +11,6 @@ import UIKit
 
 class VerticalScroll: UIView, UIScrollViewDelegate {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
     var scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
@@ -28,6 +23,11 @@ class VerticalScroll: UIView, UIScrollViewDelegate {
         return view
     }()
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
     func addLabel(_ items: [TipsItem]) {
         for element in scrollView.subviews {
             element.removeFromSuperview()
@@ -35,9 +35,7 @@ class VerticalScroll: UIView, UIScrollViewDelegate {
         
         var auxTopAnchor = scrollView.topAnchor
     
-        if (items.isEmpty) {
-            return
-        }else {
+        if (!items.isEmpty) {
             for i in items.indices {
                  createChip(i, &auxTopAnchor, items)
             }
@@ -53,7 +51,6 @@ class VerticalScroll: UIView, UIScrollViewDelegate {
         scrollView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         scrollView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        
         scrollView.delegate = self
     }
     

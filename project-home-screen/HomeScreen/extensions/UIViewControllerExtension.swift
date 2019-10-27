@@ -19,7 +19,7 @@ extension ViewController : UITableViewDataSource {
             case .CARD:
                 let cell = CustomCardCell()
                 cell.selectionStyle = UITableViewCell.SelectionStyle.none
-                cell.mainDescription = (data[indexPath.row] as! CardModel).description
+                cell.chart = data[indexPath.row] as! CardChart
                 cell.backgroundColor = UtilsColor.hexStringToUIColor(hex: "#FFFFFF")
                 cell.setupView()
                 return cell
@@ -35,7 +35,7 @@ extension ViewController : UITableViewDataSource {
             case .LISTCHART:
                 let cell = CustomSideScrollChartsCell()
                 cell.selectionStyle = UITableViewCell.SelectionStyle.none
-                cell.title = (data[indexPath.row] as! SideScrollChartsModel).title
+                cell.sideScrollChartsModel = data[indexPath.row] as! SideScrollChartsModel
                 cell.setupView()
                 return cell
         }

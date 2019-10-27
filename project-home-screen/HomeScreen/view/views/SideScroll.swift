@@ -11,11 +11,6 @@ import UIKit
 
 class SideScroll: UIView, UIScrollViewDelegate {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
     var categoryScrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
@@ -28,21 +23,21 @@ class SideScroll: UIView, UIScrollViewDelegate {
         return view
     }()
     
-    func addLabel(infoLabel: [String]) {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
+    func addLabel(cardsChart: [CardChart]) {
         for element in categoryScrollView.subviews {
             element.removeFromSuperview()
         }
         
-        var texts = [String]()
         var auxLeftAnchor = categoryScrollView.leftAnchor
-    
-        texts = infoLabel
-     
-        if (texts.isEmpty) {
-            return
-        }else {
-            for i in texts.indices {
-                 createChip(i, &auxLeftAnchor, texts)
+
+        if (!cardsChart.isEmpty) {
+            for i in cardsChart.indices {
+                 createChip(i, &auxLeftAnchor, cardsChart)
             }
         }
     }
@@ -56,7 +51,7 @@ class SideScroll: UIView, UIScrollViewDelegate {
         categoryScrollView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         categoryScrollView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         categoryScrollView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        categoryScrollView.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        categoryScrollView.heightAnchor.constraint(equalToConstant: 240).isActive = true
         categoryScrollView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         categoryScrollView.delegate = self
@@ -64,29 +59,28 @@ class SideScroll: UIView, UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > 0 || scrollView.contentOffset.y < 0 {
-            scrollView.contentOffset.y = 0
+            scrollView.contentOffset.y = -2
         }
     }
     
-    fileprivate func createChip(_ i: Int, _ auxLeftAnchor: inout NSLayoutXAxisAnchor, _ text: [String]) {
-        let label = ViewIntoSideScroll()
-        label.hitLabel.text = text[i]
-        label.decriptionLabel.text = text[i]
-        categoryScrollView.addSubview(label)
+    fileprivate func createChip(_ i: Int, _ auxLeftAnchor: inout NSLayoutXAxisAnchor, _ cardChart: [CardChart]) {
+        let component = ViewIntoSideScroll()
+        component.chartView.options = cardChart[i].options
+        categoryScrollView.addSubview(component)
         
-        label.centerYAnchor.constraint(equalTo: categoryScrollView.centerYAnchor).isActive = true
+        component.centerYAnchor.constraint(equalTo: categoryScrollView.centerYAnchor).isActive = true
         
         if i == 0 {
-            label.leftAnchor.constraint(equalTo: auxLeftAnchor, constant: 12).isActive = true
+            component.leftAnchor.constraint(equalTo: auxLeftAnchor, constant: 12).isActive = true
         } else {
-            label.leftAnchor.constraint(equalTo: auxLeftAnchor, constant: 8).isActive = true
+            component.leftAnchor.constraint(equalTo: auxLeftAnchor, constant: 250).isActive = true
         }
         
-        if i == text.count - 1 {
-            label.rightAnchor.constraint(equalTo: categoryScrollView.rightAnchor, constant: -12).isActive = true
+        if i == cardChart.count - 1 {
+            component.rightAnchor.constraint(equalTo: categoryScrollView.rightAnchor, constant: -240).isActive = true
         }
         
-        auxLeftAnchor = label.rightAnchor
+        auxLeftAnchor = component.rightAnchor
     }
     
     required init?(coder aDecoder: NSCoder) {

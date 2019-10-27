@@ -9,12 +9,7 @@
 import UIKit
 
 class CustomSideScrollChartsCell: UITableViewCell {
-    var title: String?
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupView()
-    }
+    var sideScrollChartsModel: SideScrollChartsModel?
     
     var sideScroll: SideScroll = {
         var sideScroll = SideScroll()
@@ -38,15 +33,19 @@ class CustomSideScrollChartsCell: UITableViewCell {
         return label
     }()
     
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupView()
+    }
+    
     func setupView() {
         self.addSubview(labelView)
         self.addSubview(cardView)
         self.cardView.addSubview(sideScroll)
-        
-        sideScroll.addLabel(infoLabel: ["melancia", "tomate", "laranja", "banana", "maca", "manga", "jaca"])
             
-        if let title = title {
-            labelView.text = title
+        if let sideScrollChartsModel = sideScrollChartsModel {
+            labelView.text = sideScrollChartsModel.title
+            sideScroll.addLabel(cardsChart: sideScrollChartsModel.listChart)
         }
 
         let constraints = [
@@ -55,13 +54,13 @@ class CustomSideScrollChartsCell: UITableViewCell {
             labelView.rightAnchor.constraint(equalTo: self.rightAnchor),
             
             cardView.topAnchor.constraint(equalTo: self.labelView.bottomAnchor, constant: 10),
-            cardView.heightAnchor.constraint(equalToConstant: 140),
+            cardView.heightAnchor.constraint(equalToConstant: 240),
             cardView.leftAnchor.constraint(equalTo: self.leftAnchor),
             cardView.rightAnchor.constraint(equalTo: self.rightAnchor),
             cardView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             
             sideScroll.topAnchor.constraint(equalTo: self.cardView.topAnchor),
-            sideScroll.heightAnchor.constraint(equalToConstant: 140),
+            sideScroll.heightAnchor.constraint(equalToConstant: 240),
             sideScroll.leftAnchor.constraint(equalTo: self.leftAnchor),
             sideScroll.rightAnchor.constraint(equalTo: self.rightAnchor),
             sideScroll.bottomAnchor.constraint(equalTo: self.bottomAnchor)

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Highcharts
 
 class CustomCardCell: UITableViewCell {
-    var mainDescription: String?
+    var chart: CardChart?
     
     var cardView: CardView = {
         var card = CardView()
@@ -26,6 +27,14 @@ class CustomCardCell: UITableViewCell {
         
         return descriptionLabel
     }()
+    
+    var chartView: HIChartView = {
+        let chartView = HIChartView()
+        chartView.backgroundColor = UIColor.white
+        chartView.translatesAutoresizingMaskIntoConstraints = false
+        chartView.backgroundColor = .white
+        return chartView
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -35,29 +44,33 @@ class CustomCardCell: UITableViewCell {
         
     func setupView() {
         self.addSubview(cardView)
-        cardView.addSubview(labelDescription)
+        self.cardView.addSubview(chartView)
+        
         dataSubviews()
 
         let constraints = [
             cardView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            cardView.heightAnchor.constraint(equalToConstant: 180),
+            cardView.heightAnchor.constraint(equalToConstant: 230),
             cardView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
             cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20),
             cardView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
             
-            labelDescription.topAnchor.constraint(equalTo: self.cardView.topAnchor, constant: 10),
-            labelDescription.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            chartView.topAnchor.constraint(equalTo: self.cardView.topAnchor, constant: 5),
+            chartView.rightAnchor.constraint(equalTo: self.cardView.rightAnchor),
+            chartView.leftAnchor.constraint(equalTo: self.cardView.leftAnchor),
+            chartView.centerXAnchor.constraint(equalTo: self.cardView.centerXAnchor),
+            chartView.bottomAnchor.constraint(equalTo: self.cardView.bottomAnchor, constant: -5),
         ]
         
         NSLayoutConstraint.activate(constraints)
     }
         
     func dataSubviews() {
-        if let mainDescription = mainDescription {
-            labelDescription.text = mainDescription
+        if chart != nil {
+            chartView.options = chart?.options
         }
     }
-        
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

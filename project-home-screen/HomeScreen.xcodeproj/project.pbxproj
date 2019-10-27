@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5EF65C82FE8AC07F8A0A977C /* Pods_HomeScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1041E479C0ADBD601D6AE8 /* Pods_HomeScreen.framework */; };
+		F2087D2B23620E5400E421B3 /* ChartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2087D2A23620E5400E421B3 /* ChartType.swift */; };
 		F2367A682360CA2600537884 /* CustomSideScrollChartsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2367A672360CA2600537884 /* CustomSideScrollChartsCell.swift */; };
 		F2367A6A2360CA4300537884 /* CustomTipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2367A692360CA4300537884 /* CustomTipsCell.swift */; };
 		F2367A6D2360CB8B00537884 /* UtilsColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2367A6C2360CB8B00537884 /* UtilsColor.swift */; };
@@ -27,7 +28,7 @@
 		F2FF3B502360B43B0088E8FC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B4F2360B43B0088E8FC /* UIViewControllerExtension.swift */; };
 		F2FF3B532360B50C0088E8FC /* ComponentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B522360B50C0088E8FC /* ComponentType.swift */; };
 		F2FF3B552360B5D60088E8FC /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B542360B5D60088E8FC /* Tips.swift */; };
-		F2FF3B572360B5E00088E8FC /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B562360B5E00088E8FC /* CardModel.swift */; };
+		F2FF3B572360B5E00088E8FC /* CardChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B562360B5E00088E8FC /* CardChart.swift */; };
 		F2FF3B592360B5F90088E8FC /* SideScrollChartsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B582360B5F90088E8FC /* SideScrollChartsModel.swift */; };
 		F2FF3B5B2360BAAD0088E8FC /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B5A2360BAAD0088E8FC /* Component.swift */; };
 		F2FF3B5D2360BCE70088E8FC /* CustomCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF3B5C2360BCE70088E8FC /* CustomCardCell.swift */; };
@@ -37,6 +38,7 @@
 		0E1041E479C0ADBD601D6AE8 /* Pods_HomeScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7732136AF016C5F5F489C75 /* Pods-HomeScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeScreen.release.xcconfig"; path = "Target Support Files/Pods-HomeScreen/Pods-HomeScreen.release.xcconfig"; sourceTree = "<group>"; };
 		D76020074D9618FC28F58FB2 /* Pods-HomeScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeScreen.debug.xcconfig"; path = "Target Support Files/Pods-HomeScreen/Pods-HomeScreen.debug.xcconfig"; sourceTree = "<group>"; };
+		F2087D2A23620E5400E421B3 /* ChartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartType.swift; sourceTree = "<group>"; };
 		F2367A672360CA2600537884 /* CustomSideScrollChartsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSideScrollChartsCell.swift; sourceTree = "<group>"; };
 		F2367A692360CA4300537884 /* CustomTipsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipsCell.swift; sourceTree = "<group>"; };
 		F2367A6C2360CB8B00537884 /* UtilsColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsColor.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		F2FF3B4F2360B43B0088E8FC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		F2FF3B522360B50C0088E8FC /* ComponentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentType.swift; sourceTree = "<group>"; };
 		F2FF3B542360B5D60088E8FC /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
-		F2FF3B562360B5E00088E8FC /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		F2FF3B562360B5E00088E8FC /* CardChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChart.swift; sourceTree = "<group>"; };
 		F2FF3B582360B5F90088E8FC /* SideScrollChartsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideScrollChartsModel.swift; sourceTree = "<group>"; };
 		F2FF3B5A2360BAAD0088E8FC /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		F2FF3B5C2360BCE70088E8FC /* CustomCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardCell.swift; sourceTree = "<group>"; };
@@ -189,11 +191,12 @@
 			children = (
 				F2FF3B522360B50C0088E8FC /* ComponentType.swift */,
 				F2FF3B542360B5D60088E8FC /* Tips.swift */,
-				F2FF3B562360B5E00088E8FC /* CardModel.swift */,
+				F2FF3B562360B5E00088E8FC /* CardChart.swift */,
 				F2FF3B582360B5F90088E8FC /* SideScrollChartsModel.swift */,
 				F2FF3B5A2360BAAD0088E8FC /* Component.swift */,
 				F2C86D9E2360E9DB00D73F22 /* ChartModel.swift */,
 				F2C86DA02360EC2700D73F22 /* TipsItem.swift */,
+				F2087D2A23620E5400E421B3 /* ChartType.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -314,12 +317,13 @@
 			files = (
 				F2FF3B4E2360AE640088E8FC /* CardView.swift in Sources */,
 				F2367A682360CA2600537884 /* CustomSideScrollChartsCell.swift in Sources */,
-				F2FF3B572360B5E00088E8FC /* CardModel.swift in Sources */,
+				F2FF3B572360B5E00088E8FC /* CardChart.swift in Sources */,
 				F2FF3B532360B50C0088E8FC /* ComponentType.swift in Sources */,
 				F2C86DA12360EC2700D73F22 /* TipsItem.swift in Sources */,
 				F2C86D9F2360E9DB00D73F22 /* ChartModel.swift in Sources */,
 				F2FF3B322360A2F10088E8FC /* ViewController.swift in Sources */,
 				F2FF3B2E2360A2F10088E8FC /* AppDelegate.swift in Sources */,
+				F2087D2B23620E5400E421B3 /* ChartType.swift in Sources */,
 				F2372EF92361048B00A19E14 /* VerticalScroll.swift in Sources */,
 				F2367A6D2360CB8B00537884 /* UtilsColor.swift in Sources */,
 				F2FF3B552360B5D60088E8FC /* Tips.swift in Sources */,

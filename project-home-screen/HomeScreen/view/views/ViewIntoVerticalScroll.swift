@@ -11,11 +11,6 @@ import UIKit
 
 class ViewIntoVerticalScroll: UIView {
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    
     var cardView: CardView = {
         var card = CardView()
         card.translatesAutoresizingMaskIntoConstraints = false
@@ -40,27 +35,36 @@ class ViewIntoVerticalScroll: UIView {
         return label
     }()
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
     func setupViews() {
         self.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(cardView)
         cardView.addSubview(imageLabelView)
         cardView.addSubview(decriptionLabel)
-        
-        cardView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
-        cardView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5).isActive = true
-        cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -5).isActive = true
-        cardView.heightAnchor.constraint(equalToConstant: 55).isActive = true
-        
-        imageLabelView.topAnchor.constraint(equalTo: self.cardView.topAnchor, constant: 5).isActive = true
-        imageLabelView.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        imageLabelView.leftAnchor.constraint(equalTo: self.cardView.leftAnchor, constant: 10).isActive = true
-        imageLabelView.bottomAnchor.constraint(equalTo: self.cardView.bottomAnchor, constant: -5).isActive = true
-        
-        decriptionLabel.topAnchor.constraint(equalTo: self.cardView.topAnchor, constant: 5).isActive = true
-        decriptionLabel.leftAnchor.constraint(equalTo: self.imageLabelView.rightAnchor, constant: 15).isActive = true
-        decriptionLabel.rightAnchor.constraint(equalTo: self.cardView.rightAnchor, constant: -5).isActive = true
-        decriptionLabel.bottomAnchor.constraint(equalTo: self.cardView.bottomAnchor, constant: -5).isActive = true
+    
+        let constraints = [
+            cardView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
+            cardView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 5),
+            cardView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -5),
+            cardView.heightAnchor.constraint(equalToConstant: 55),
+            
+            imageLabelView.topAnchor.constraint(equalTo: self.cardView.topAnchor, constant: 5),
+            imageLabelView.widthAnchor.constraint(equalToConstant: 50),
+            imageLabelView.leftAnchor.constraint(equalTo: self.cardView.leftAnchor, constant: 10),
+            imageLabelView.bottomAnchor.constraint(equalTo: self.cardView.bottomAnchor, constant: -5),
+            
+            decriptionLabel.topAnchor.constraint(equalTo: self.cardView.topAnchor, constant: 5),
+            decriptionLabel.leftAnchor.constraint(equalTo: self.imageLabelView.rightAnchor, constant: 15),
+            decriptionLabel.rightAnchor.constraint(equalTo: self.cardView.rightAnchor, constant: -5),
+            decriptionLabel.bottomAnchor.constraint(equalTo: self.cardView.bottomAnchor, constant: -5)
+        ]
+    
+        NSLayoutConstraint.activate(constraints)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -7,12 +7,17 @@
 //
 
 import Foundation
+import Highcharts
 
-class CardModel: Component {
+class CardChart: Component {
     let description: String
+    let charType: ChartType
+    let options: HIOptions?
     
-    init(description: String) {
+    init(description: String, charType: ChartType, options: HIOptions) {
         self.description = description
+        self.charType = charType
+        self.options = options
         super.init(type: ComponentType.CARD)
     }
 }

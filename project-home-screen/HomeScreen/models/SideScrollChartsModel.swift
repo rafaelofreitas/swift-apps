@@ -10,9 +10,9 @@ import Foundation
 
 class SideScrollChartsModel: Component {
     let title: String
-    let listChart: [ChartModel]
+    let listChart: [CardChart]
     
-    init(title: String, listChart: [ChartModel]) {
+    init(title: String, listChart: [CardChart]) {
         self.title = title
         self.listChart = listChart
         super.init(type: ComponentType.LISTCHART)
